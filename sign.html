@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Gourmet Hub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="sign.css">
+</head>
+<body class="auth-body">
+
+    <div class="auth-container">
+        <div class="auth-card">
+            <div class="auth-header">
+                <div class="logo">Gourmet<span>Hub</span></div>
+                <h1>Welcome Back</h1>
+                <p>Login to manage your orders and profile</p>
+            </div>
+
+            <form action="#">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <div class="input-icon">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" id="email" placeholder="email@example.com" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="label-row">
+                        <label for="password">Password</label>
+                        <a href="#" class="form-link">Forgot Password?</a>
+                    </div>
+                    <div class="input-icon">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-full">Sign In</button>
+            </form>
+
+            <div class="divider">
+                <span>OR</span>
+            </div>
+
+            <div class="social-login">
+                <button class="btn-social">
+                    <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google"> Google
+                </button>
+                <button class="btn-social">
+                    <i class="fab fa-apple"></i> Apple
+                </button>
+            </div>
+
+            <p class="switch-auth">
+                Don't have an account? <a href="signup.html">Create Account</a>
+            </p>
+        </div>
+        
+        <a href="index.html" class="back-home"><i class="fas fa-arrow-left"></i> Back to Home</a>
+    </div>
+
+</body>
+</html>

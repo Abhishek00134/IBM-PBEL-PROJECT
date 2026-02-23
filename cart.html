@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart | Gourmet Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo"><a href="index.html" style="text-decoration: none; color: inherit;">Gourmet<span>Hub</span></a></div>
+            <nav class="nav-links">
+                <a href="index.html">Continue Shopping</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container py-section">
+        <h1 class="page-title">Shopping Cart</h1>
+        
+       <div class="cart-container">
+            <div class="left">
+                <div id="empty-box" class="empty-message" style="display:none;">
+                        <h2>Your Cart is Empty</h2>
+                        <a href="./index.html">Shop Now</a>
+                </div>
+                    
+            <div id="cart-items"></div>
+                    
+        </div>
+    
+    <div class="right">
+        <div class="price-box">
+            <h3>PRICE DETAILS</h3>
+            <div class="row"><span>Price (<span id="item-count">0</span> items)</span><span id="price">₹0</span></div>
+            <div class="row"><span>Discount</span><span id="discount" class="green">-₹0</span></div>
+            <div class="row"><span>Delivery</span><span id="delivery">Free</span></div>
+            <hr>
+            <div class="row total"><b>Total Amount</b><b id="total">₹0</b></div>
+            <p class="save-text" id="save-text"></p>
+        </div>
+        <div class="bottom-bar">
+            <button id="place-order">PLACE ORDER</button>
+        </div>
+    </div>
+
+</div>
+    </main>
+<script src="cart.js">
+</script>
+</body>
+</html>

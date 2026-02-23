@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gourmet Hub | Premium Food Delivery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#menu">Menu</a>
+                <a href="#foot">Contact Us</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn">
+                    <a href="cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    <!-- <span class="badge">2</span> -->
+                </button>
+                <a href="sign.html"><button class="btn btn-primary">Sign In</button></a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container hero-grid">
+            <div class="hero-text">
+                <h1>Delicious Meals <br>Delivered To <span>Your Door</span></h1>
+                <p>Experience the finest cuisine from top-rated local chefs. Fast delivery, fresh ingredients, and zero hassle.</p>
+                <div class="search-box">
+                    <!-- <input type="text" placeholder="Enter your delivery address..."> -->
+                    <a href="popular.html"><button class="btn btn-secondary">Find Food</button></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="./assets/main-image.avif" alt="Healthy Bowl">
+            </div>
+        </div>
+    </section>
+
+    
+    <main  id="menu"class="container py-section">
+        <div class="section-header">
+            <h2>Our Best Food</h2>
+            <a href="popular.html" class="link">View All</a>
+        </div>
+
+        <div class="grid">
+            <div class="card"
+                data-name = "Artisan Margherita"
+                data-price ="199"
+                data-img = "./assets/pizza.avif">
+            
+                <div class="card-img">
+                    <img src="./assets/pizza.avif" alt="Pizza">
+                    <span class="tag">Free Delivery</span>
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Artisan Margherita</h3>
+                        <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                    </div>
+                    <p>Italian • Stone Baked • Vegetarian</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 199</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name = "Double Smash Burger"
+                data-price ="149"
+                data-img = "./assets/smashBurger.avif">
+                <div class="card-img">
+                    <img src="./assets/smashBurger.avif" alt="Burger">
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Double Smash Burger</h3>
+                        <span class="rating"><i class="fas fa-star"></i> 4.7</span>
+                    </div>
+                    <p>American • Beef • Brioche</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 149</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name = "Honey Glazed Ribs"
+                data-price ="399"
+                data-img = "./assets/ribs.avif">
+                <div class="card-img">
+                    <img src="./assets/ribs.avif" alt="BBQ Ribs">
+                </div>
+                <div class="card-body">
+                    <div class="card-title">
+                        <h3>Honey Glazed Ribs</h3>
+                        <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                    </div>
+                    <p>Grill • Smokehouse • Pork</p>
+                    <div class="card-footer">
+                        <span class="price">Rs. 399</span>
+                        <button class="add-to-cart">+</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="container py-section">
+    <div class="section-header">
+        <div>
+            <h2 class="badge-title">Flash Deals</h2>
+            <p>Grab these delicious meals at 30% off for a limited time.</p>
+        </div>
+        <a href="deal.html" class="link">See All Deals</a>
+    </div>
+
+    <div class="grid">
+        <div class="card border-orange"
+            data-name = "Cheesy BBQ Burger"
+            data-price ="160"
+            data-img = "./assets/bbqBurger.avif">
+            <div class="card-img">
+                <img src="./assets/bbqBurger.avif" alt="Special Burger">
+                <span class="discount-tag">-15%</span>
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>Cheesy BBQ Burger</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.5</span>
+                </div>
+                <div class="card-footer">
+                    <span class="price">Rs. 160<small class="old-price">Rs. 190</small></span>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card border-orange"
+            data-name = "Mexican Street Tacos"
+            data-price ="199"
+            data-img = "./assets/tacos.avif">
+            <div class="card-img">
+                <img src="./assets/tacos.avif" alt="Tacos">
+                <span class="discount-tag">-20%</span>
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>Mexican Street Tacos</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.6</span>
+                </div>
+                <div class="card-footer">
+                    <span class="price">Rs. 199 <small class="old-price">Rs.250</small></span>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="card border-orange"
+            data-name = "Chinese noodles"
+            data-price ="199"
+            data-img = "./assets/noodles.avif">
+            <div class="card-img">
+                <img src="./assets/noodles.avif" alt="noodle">
+                <span class="discount-tag">-15%</span>
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>Chinese noodles</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                </div>
+                <div class="card-footer">
+                    <span class="price">Rs. 119 <small class="old-price">Rs. 140</small></span>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container py-section">
+    <div class="section-header">
+        <div>
+            <h2>Healthy & Fresh</h2>
+            <p>Nutritious meals to keep you energized through the day.</p>
+        </div>
+    </div>
+
+    <div class="grid">
+        <div class="card"
+            data-name = "Mediterranean Salad"
+            data-price ="289"
+            data-img = "./assets/meditarrien salad.avif">
+            <div class="card-img">
+                <img src="./assets/meditarrien salad.avif" alt="Salad">
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>Mediterranean Salad</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.9</span>
+                </div>
+                <p>Keto • Low Carb • Organic</p>
+                <div class="card-footer">
+                    <span class="price">Rs. 289</span>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card"
+            data-name = "Exotic Soup"
+            data-price ="169"
+            data-img = "./assets/exotic-soup.avif">
+            <div class="card-img">
+                <img src="./assets/exotic-soup.avif" alt="Fruit Bowl">
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>Exotic Soup</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                </div>
+                <p>Fresh • Seasonal • Vegan</p>
+                <div class="card-footer">
+                    <span class="price">Rs. 169</span>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+        </div>
+        <div class="card"
+            data-name = "Vitamin Rich Salad"
+            data-price ="119"
+            data-img = "./assets/vitamin-salad.avif">
+            <div class="card-img">
+                <img src="./assets/vitamin-salad.avif" alt="Fruit Bowl">
+            </div>
+            <div class="card-body">
+                <div class="card-title">
+                    <h3>Vitamin Rich Salad</h3>
+                    <span class="rating"><i class="fas fa-star"></i> 4.8</span>
+                </div>
+                <p>Fresh • Seasonal • Healthy</p>
+                <div class="card-footer">
+                    <span class="price">Rs. 119</span>
+                    <button class="add-to-cart">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="site-footer" id="foot">
+    <div class="container footer-grid">
+        <div class="footer-column">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <p class="footer-about">
+                Bringing the finest flavors from local kitchens straight to your doorstep. Quality ingredients, lightning-fast delivery.
+            </p>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +91 XXX-XXX-XXXX</li>
+                <li><i class="fas fa-envelope"></i> support@gourmethub.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 AREA, GAUR City</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-content">
+            <p>&copy; 2026 Gourmet Hub. All rights reserved.</p>
+            <div class="payment-methods">
+                <i class="fab fa-cc-visa"></i>
+                <i class="fab fa-cc-mastercard"></i>
+                <i class="fab fa-cc-paypal"></i>
+                <i class="fab fa-cc-apple-pay"></i>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="index.js">
+     
+</script>
+</body>
+</html>
