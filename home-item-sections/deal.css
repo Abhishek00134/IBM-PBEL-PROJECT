@@ -178,7 +178,7 @@ body {
     font-weight:900;
 }
 
-.grab-btn {
+.add-to-cart{
     background: #2c3e50;
     color: white;
     border: none;
@@ -189,7 +189,7 @@ body {
     transition: background 0.3s;
 }
 
-.grab-btn:hover {
+.add-to-cart:hover {
     background: #e67e22;
 }
 

@@ -155,7 +155,7 @@ body {
     color: #2c3e50;
 }
 
-.add-btn {
+.add-to-cart{
     padding: 6px 14px;
     border-radius: 8px;
     border: 1px solid #e67e22;
@@ -165,7 +165,7 @@ body {
     cursor: pointer;
 }
 
-.add-btn:hover {
+.add-to-cart:hover {
     background: #e67e22;
     color: #fff;
 }

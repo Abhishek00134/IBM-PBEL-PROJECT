@@ -144,7 +144,7 @@ localStorage.setItem("orders", JSON.stringify(orders));
   localStorage.removeItem("cart");
 
   // Redirect after address submit
-  window.location.href = "placed.html";
+  window.location.href = "../orderPlace/placed.html";
 });
 
 // Close modal when clicking outside

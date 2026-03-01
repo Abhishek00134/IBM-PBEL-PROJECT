@@ -63,13 +63,42 @@ body {
     align-items: center;
     gap: 20px;
 }
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #2c3e50;
+    position: relative;
+}
+.btn {
+    padding: 10px 24px;
+    border-radius: 30px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background: #e67e22;
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #d35400;
+}
+
+.btn-secondary {
+    background: #2c3e50;
+    color: white;
+}
 h2{
     text-align: center;
     margin-top: 20px;
 }
 .orderBox{
     display: flex;
-    /* border: 1px solid black; */
     margin-left: 18px;
     margin-top: 25px;
     margin-right: 18px;
@@ -82,9 +111,10 @@ h2{
     border: 1px solid green;
     display: flex;
     gap: 14px;
-    /* flex: 0 0 calc(25% - 30px);  */
+    flex: 0 0 calc(25% - 30px); 
     background-color: #d0ec92;
-    /* color: #fff; */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+
 }
 .text{
     padding: 8px;
@@ -93,6 +123,7 @@ h2{
     border: 1px solid black;
     padding: 15px;
     background-color: antiquewhite;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.8);
 }
 .box img{
     width: 150px;
@@ -119,7 +150,7 @@ h2{
     margin-top: 15px;
 }
 
-dropdown {
+.dropdown {
   position: relative;
   display: inline-block;
   padding-bottom: 10px; /* important - hover area increase */
@@ -167,4 +198,21 @@ dropdown {
 .dropdown-content a:hover {
   background: #f4f4f4;
   color: #e67e22;
+}
+
+
+.delete-order-btn {
+  background: #c0392b;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.delete-order-btn:hover {
+  background: #922b21;
 }
