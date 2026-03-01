@@ -1,0 +1,334 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veg Dishes | GourmetHub</title>
+    <link rel="stylesheet" href="../menu-items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+ <body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <nav class="nav-links">
+                <a href="../../Home_page/index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../breakfast/breakfast.html">Breakfast</a>
+                        <a href="../breakfast/veg.html">Lunch/Dinner</a>
+                        <a href="../breakfast/dessert.html">Dessert</a>
+                        <a href="../breakfast/drinks.html">Drinks</a>
+                    </div>
+                </div>
+                <a href="../../MyOrders/order.html">My Orders</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn">
+                    <a href="../../cart/cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    <!-- <span class="badge">2</span> -->
+                </button>
+                <a href="../../login/sign.html" id="auth-link">
+                    <button class="btn btn-primary" id="auth-btn">Sign In</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="popular-container">
+        <h2>Main Course</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Paneer Butter Masala"
+                data-price="499"
+                data-img="./assets/veg/Paneer-Butter-Masala.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/Paneer-Butter-Masala.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Paneer Butter Masala</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹499</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            
+            <div class="card"
+                data-name="Shahi Paneer"
+                data-price="469"
+                data-img="./assets/veg/shahi panner.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/shahi panner.jpg" alt="Burger"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Shahi Paneer</h3><span class="rating">4.7 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹469</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Chhole"
+                data-price="399"
+                data-img="./assets/veg/chhole.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/chhole.jpg" alt="Ribs"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Chhole</h3><span class="rating">4.8 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹399</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Dal Makhani"
+                data-price="349"
+                data-img="./assets/veg/dal makhani.gif">
+                <div class="img-box"><img src="./assets/veg/dal makhani.gif" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Dal Makhani</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹349</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Malai Kofta"
+                data-price="369"
+                data-img="./assets/veg/malai kofta.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/malai kofta.jpg" alt="Sushi">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Malai Kofta</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <p class="category">Japanese • 30-40 min</p>
+                    <div class="price-row"><span class="price">₹369</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Mix Veg Curry"
+                data-price="199"
+                data-img="./assets/veg/mix veg curry.webp">
+                <div class="img-box"><img src="./assets/veg/mix veg curry.webp" alt="Salad"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Mix Veg Curry</h3><span class="rating">4.5 <i class="fas fa-star"></i></span></div>
+                    <p class="category">Healthy • 10-15 min</p>
+                    <div class="price-row"><span class="price">₹199</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Kadhi Pakora"
+                data-price="199"
+                data-img="./assets/veg/kadhi pakora.jpg">
+                <div class="img-box"><img src="./assets/veg/kadhi pakora.jpg" alt="Tacos"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Kadhi Pakora</h3><span class="rating">4.4 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹199</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Aaloo Gobhi"
+                data-price="129"
+                data-img="./assets/veg/alo gobi.jpg">
+                <div class="img-box"><img src="./assets/veg/alo gobi.jpg" alt="Steak"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Aaloo Gobhi</h3><span class="rating">4.8 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹129</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Mix Veg Curry"
+                data-price="179"
+                data-img="./assets/veg/dal fry.jpg">
+                <div class="img-box"><img src="./assets/veg/dal fry.jpg" alt="Ramen"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Dal Fry</h3><span class="rating">4.7 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹179</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Rajma"
+                data-price="229"
+                data-img="./assets/veg/rajma.jpg">
+                <div class="img-box"><img src="./assets/veg/rajma.jpg" alt="Pancakes"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Rajma</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹229</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Palak Paneer"
+                data-price="429"
+                data-img="./assets/veg/palak paneer.webp">
+                <div class="img-box"><img src="./assets/veg/palak paneer.webp" alt="Pancakes"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Palak Paneer</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹429</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Veg Kolhapuri"
+                data-price="219"
+                data-img="./assets/veg/Veg-Kolhapuri.jpg">
+                <div class="img-box"><img src="./assets/veg/Veg-Kolhapuri.jpg" alt="Pancakes"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Veg Kolhapuri</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹219</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+        <h2>Rice Dishes</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Fried Rice"
+                data-price="89"
+                data-img="./assets/veg/rice dishes/fried rice.avif">
+                <div class="img-box">
+                    <img src="./assets/veg/rice dishes/fried rice.avif" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Fried Rice</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹89</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Lemon Rice"
+                data-price="99"
+                data-img="./assets/veg/rice dishes/lemon rice.avif">
+                <div class="img-box">
+                    <img src="./assets/veg/rice dishes/lemon rice.avif" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Lemon Rice</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹99</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Veg Biryani"
+                data-price="129"
+                data-img="./assets/veg/rice dishes/veg biryani.avif">
+                <div class="img-box">
+                    <img src="./assets/veg/rice dishes/veg biryani.avif" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Veg Biryani</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹129</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Curd Rice"
+                data-price="119"
+                data-img="./assets/veg/rice dishes/curd rice.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/rice dishes/curd rice.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Curd Rice</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹119</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+        <h2>Breads</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Aaloo Paratha"
+                data-price="25"
+                data-img="./assets/veg/breads/AlooParatha.webp">
+                <div class="img-box">
+                    <img src="./assets/veg/breads/AlooParatha.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Aaloo Paratha</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹25</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Naan"
+                data-price="15"
+                data-img="./assets/veg/breads/naan.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/breads/naan.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Naan</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹15</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Chapati"
+                data-price="10"
+                data-img="./assets/veg/breads/chapati.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/breads/chapati.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Chapati</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹10</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Poori"
+                data-price="12"
+                data-img="./assets/veg/breads/poori.jpg">
+                <div class="img-box">
+                    <img src="./assets/veg/breads/poori.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Poori</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹12</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-column">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <p class="footer-about">
+                Bringing the finest flavors from local kitchens straight to your doorstep. Quality ingredients, lightning-fast delivery.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=en-in"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +91 XXX-XXX-XXXX</li>
+                <li><i class="fas fa-envelope"></i> support@gourmethub.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 AREA, GAUR City</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-content">
+            <p>&copy; 2026 Gourmet Hub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+ </body>
+ </html>

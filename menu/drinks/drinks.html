@@ -1,0 +1,244 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakFast| GourmetHub</title>
+    <link rel="stylesheet" href="../menu-items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+ <body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <nav class="nav-links">
+                <a href="../../Home_page/index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../breakfast/breakfast.html">Breakfast</a>
+                        <a href="../breakfast/veg.html">Lunch/Dinner</a>
+                        <a href="../breakfast/dessert.html">Dessert</a>
+                        <a href="../breakfast/drinks.html">Drinks</a>
+                    </div>
+                </div>
+                <a href="../../MyOrders/order.html">My Orders</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn">
+                    <a href="../../cart/cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    <!-- <span class="badge">2</span> -->
+                </button>
+                <a href="../../login/sign.html" id="auth-link">
+                    <button class="btn btn-primary" id="auth-btn">Sign In</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="popular-container">
+        <h2>Soft Drinks</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Coca Cola"
+                data-price="120"
+                data-img="./assets/drinks/coca-cola.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/coca-cola.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Coca Cola</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹120</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            
+            <div class="card"
+                data-name="Fanta"
+                data-price="120"
+                data-img="./assets/drinks/fanta.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/fanta.jpg" alt="Burger"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Fanta</h3><span class="rating">4.7 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹120</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Sprite"
+                data-price="120"
+                data-img="./assets/drinks/sprite.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/sprite.png" alt="Ribs"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Sprite</h3><span class="rating">4.8 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹120</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Coca Cola"
+                data-price="120"
+                data-img="./assets/drinks/campa.jpg">
+                <div class="img-box"><img src="./assets/drinks/campa.jpg" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Campa</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹120</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+        <h2>Cold Beverages</h2> 
+        <div class="product-grid">
+            <div class="card"
+                data-name="Ice Coffee"
+                data-price="199"
+                data-img="./assets/drinks/ice-coffee.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/ice-coffee.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Ice Coffee</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹199</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Lemonade"
+                data-price="140"
+                data-img="./assets/drinks/lemonade.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/lemonade.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Lemonade</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹140</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Sweet Tea"
+                data-price="90"
+                data-img="./assets/drinks/sweet-tea.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/sweet-tea.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Sweet Tea</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹90</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Iced Matcha"
+                data-price="299"
+                data-img="./assets/drinks/iced matcha.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/iced matcha.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Iced Matcha</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹299</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+        <h2>Milkshakes</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Oreo Shake"
+                data-price="269"
+                data-img="./assets/drinks/oreo-shake.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/oreo-shake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Oreo Shake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹269</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Strawberry Shake"
+                data-price="160"
+                data-img="./assets/drinks/strawberry-shake.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/strawberry-shake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Strawberry Shake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹160</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Chocolate Shake"
+                data-price="289"
+                data-img="./assets/drinks/choco-shake.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/choco-shake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Chocolate Shake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹289</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Vanilla Shake"
+                data-price="119"
+                data-img="./assets/drinks/vanilla-shake.jpg">
+                <div class="img-box">
+                    <img src="./assets/drinks/vanilla-shake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Vanilla Shake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹119</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-column">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <p class="footer-about">
+                Bringing the finest flavors from local kitchens straight to your doorstep. Quality ingredients, lightning-fast delivery.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=en-in"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +91 XXX-XXX-XXXX</li>
+                <li><i class="fas fa-envelope"></i> support@gourmethub.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 AREA, GAUR City</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-content">
+            <p>&copy; 2026 Gourmet Hub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+ </body>
+ </html>

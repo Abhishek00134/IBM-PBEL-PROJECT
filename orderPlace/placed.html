@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Order Placed</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        background: linear-gradient(135deg, #4CAF50, #2e7d32);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card {
+        background: #ffffff;
+        width: 400px;
+        max-width: 90%;
+        padding: 40px 30px;
+        border-radius: 15px;
+        text-align: center;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+        animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .checkmark {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: #4CAF50;
+        margin: 0 auto 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation: pop 0.4s ease;
+    }
+
+    .checkmark svg {
+        width: 40px;
+        height: 40px;
+        stroke: #fff;
+        stroke-width: 4;
+        fill: none;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-dasharray: 48;
+        stroke-dashoffset: 48;
+        animation: draw 0.6s forwards 0.3s ease;
+    }
+
+    h1 {
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    p {
+        color: #666;
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .order-details {
+        background: #f5f5f5;
+        padding: 15px;
+        border-radius: 8px;
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+
+    .order-details span {
+        font-weight: bold;
+        color: #333;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 18px;
+        margin: 5px;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 14px;
+        transition: 0.3s;
+    }
+
+    .primary {
+        background: #4CAF50;
+        color: #fff;
+    }
+
+    .primary:hover {
+        background: #388e3c;
+    }
+
+    .secondary {
+        background: #e0e0e0;
+        color: #333;
+    }
+
+    .secondary:hover {
+        background: #ccc;
+    }
+
+    @keyframes draw {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+
+    @keyframes pop {
+        0% { transform: scale(0); }
+        100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 480px) {
+        .card {
+            padding: 30px 20px;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<div class="card">
+    <div class="checkmark">
+        <svg viewBox="0 0 24 24">
+            <polyline points="20 6 9 17 4 12"></polyline>
+        </svg>
+    </div>
+
+    <h1>Order Placed Successfully!</h1>
+    <p>Thank you for your purchase. Your order has been confirmed.</p>
+
+    <div class="order-details">
+        Order ID: <span class="order-id"></span><br>
+        Delivery Address: <span class="order-address"></span>
+    </div>
+
+    <a href="../MyOrders/order.html" class="btn primary">Track Order</a>
+    <a href="../Home_page/index.html" class="btn secondary">Continue Shopping</a>
+</div>
+<script>
+  
+  const orders = JSON.parse(localStorage.getItem("orders")) || [];
+
+  if (orders.length > 0) {
+    const lastOrder = orders[orders.length - 1];
+
+    document.querySelector(".order-id").innerText = lastOrder.id;
+    document.querySelector(".order-address").innerText = lastOrder.address;
+  }
+
+  
+</script>
+</body>
+</html>

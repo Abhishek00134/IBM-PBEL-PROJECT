@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GourmetHub</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+     <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <nav class="nav-links">
+                <a href="../Home_page/index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../menu/breakfast/breakfast.html">Breakfast</a>
+                        <a href="../menu/breakfast/veg.html">Lunch/Dinner</a>
+                        <a href="../menu/breakfast/dessert.html">Dessert</a>
+                        <a href="../menu/breakfast/drinks.html">Drinks</a>
+                    </div>
+                </div>
+                <a href="">My Orders</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn">
+                    <a href="../cart/cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    <!-- <span class="badge">2</span> -->
+                </button>
+                <a href="../login/sign.html" id="auth-link">
+                    <button class="btn btn-primary" id="auth-btn">Sign In</button>
+                </a>
+            </div>
+        </div>
+    </header>
+   
+   <h2>Your Ordered Items</h2>
+<div id="order-items" class="orderBox"></div>
+
+<!-- <script>
+  let order = JSON.parse(localStorage.getItem("latestOrder"));
+  const container = document.getElementById("order-items");
+
+  function renderOrders() {
+    container.innerHTML = "";
+
+    if (!order || order.items.length === 0) {
+      container.innerHTML = "<p>No order found.</p>";
+      return;
+    }
+
+    order.items.forEach(item => {
+      container.innerHTML += `
+        <div class="box">
+          <img src="${item.img}" width="80">
+          <div>
+            <h4>${item.name}</h4>
+            <p>Price: ₹${item.price}</p>
+            <p>Quantity: ${item.qty}</p>
+            <p>Status : Preparing.....</p>
+            <button onclick="cancelItem(${item.id})">
+              Cancel Order
+            </button>
+          </div>
+        </div>
+      `;
+    });
+  }
+
+  function cancelItem(id) {
+    const confirmCancel = confirm("Are you sure you want to cancel this item?");
+    if (!confirmCancel) return;
+
+    // Remove only selected item
+    order.items = order.items.filter(item => item.id !== id);
+
+    if (order.items.length === 0) {
+      localStorage.removeItem("latestOrder");
+      order = null;
+    } else {
+      localStorage.setItem("latestOrder", JSON.stringify(order));
+    }
+
+    renderOrders();
+  }
+
+  renderOrders();
+</script> -->
+<script>
+  let orders = JSON.parse(localStorage.getItem("orders")) || [];
+  const container = document.getElementById("order-items");
+
+  function renderOrders() {
+    container.innerHTML = "";
+
+    if (orders.length === 0) {
+      container.innerHTML = "<p>No orders found.</p>";
+      return;
+    }
+
+    orders.forEach((order, orderIndex) => {
+      container.innerHTML += `
+        <div class="orderDetail">
+          <h3>Order ID: ${order.id}</h3>
+          <p><b>Date:</b> ${order.date}</p>
+          <p><b>Address:</b> ${order.address}</p>
+          <div id="items-${orderIndex}"></div>
+        </div>
+      `;
+
+      const itemsContainer = document.getElementById(`items-${orderIndex}`);
+
+      order.items.forEach(item => {
+        itemsContainer.innerHTML += `
+            <div class="box">
+              <img src="${item.img}" width="70">
+              <div class="text">
+                <h4>${item.name}</h4>
+                <p>Price: ₹${item.price}</p>
+                <p>Quantity: ${item.qty}</p>
+                <p>Status : Preparing.....</p>
+                <button onclick="cancelItem(${orderIndex}, ${item.id})">
+                  Cancel Item
+                </button>
+              </div>
+            </div>
+        `;
+      });
+    });
+  }
+
+  function cancelItem(orderIndex, itemId) {
+    const confirmCancel = confirm("Cancel this item?");
+    if (!confirmCancel) return;
+
+    orders[orderIndex].items =
+      orders[orderIndex].items.filter(item => item.id !== itemId);
+
+    // If order empty → remove entire order
+    if (orders[orderIndex].items.length === 0) {
+      orders.splice(orderIndex, 1);
+    }
+
+    localStorage.setItem("orders", JSON.stringify(orders));
+    renderOrders();
+  }
+
+  renderOrders();
+</script>
+    <script src="index.js"></script>
+    <script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_YXJyaXZpbmctY291Z2FyLTE2LmNsZXJrLmFjY291bnRzLmRldiQ"
+  src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js">
+</script>
+</body>
+</html>

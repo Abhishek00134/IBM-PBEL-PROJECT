@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In | Gourmet Hub</title>
+    <link rel="stylesheet" href="sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script
+  async
+  crossorigin="anonymous"
+  data-clerk-publishable-key="pk_test_YXJyaXZpbmctY291Z2FyLTE2LmNsZXJrLmFjY291bnRzLmRldiQ"
+  src="https://cdn.jsdelivr.net/npm/@clerk/clerk-js@latest/dist/clerk.browser.js">
+</script>
+</head>
+<body>
+    <a href="../Home_page/index.html" class="back-home">
+    <i class="fas fa-arrow-left"></i> Back to Home
+  </a>
+
+  <div class="auth-container">
+      <div id="app"></div>
+  </div>
+  <script>
+window.addEventListener("load", async () => {
+  await Clerk.load();
+  if (Clerk.user) {
+    window.location.replace("index.html");
+    return;
+  }
+  Clerk.mountSignIn(
+    document.getElementById("app"),
+    {
+      afterSignInUrl: "index.html"
+    }
+  );
+});
+</script>
+</body>
+</html>

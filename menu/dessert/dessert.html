@@ -1,0 +1,332 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BreakFast| GourmetHub</title>
+    <link rel="stylesheet" href="../menu-items.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+ </head>
+ <body>
+    <header class="navbar">
+        <div class="container navbar-content">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <nav class="nav-links">
+                <a href="../../Home_page/index.html">Home</a>
+                <div class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu ▾</a>
+                    <div class="dropdown-content">
+                        <a href="../breakfast/breakfast.html">Breakfast</a>
+                        <a href="../breakfast/veg.html">Lunch/Dinner</a>
+                        <a href="../breakfast/dessert.html">Dessert</a>
+                        <a href="../breakfast/drinks.html">Drinks</a>
+                    </div>
+                </div>
+                <a href="../../MyOrders/order.html">My Orders</a>
+            </nav>
+            <div class="nav-actions">
+                <button class="icon-btn cart-btn">
+                    <a href="../../cart/cart.html"><i class="fas fa-shopping-basket"></i></a>
+                    <!-- <span class="badge">2</span> -->
+                </button>
+                <a href="../../login/sign.html" id="auth-link">
+                    <button class="btn btn-primary" id="auth-btn">Sign In</button>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main class="popular-container">
+        <h2>Indian Desserts</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Rasgulla"
+                data-price="119"
+                data-img="./assets/dessert/rasgulla.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/rasgulla.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Rasgulla</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹119</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            
+            <div class="card"
+                data-name="Mysore Pak"
+                data-price="120"
+                data-img="./assets/dessert/mysore-pak.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/mysore-pak.jpg" alt="Burger"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Mysore Pak</h3><span class="rating">4.7 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹269</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Gulab Jamun"
+                data-price="119"
+                data-img="./assets/dessert/gulab-jamun.webp">
+                <div class="img-box">
+                    <img src="./assets/dessert/gulab-jamun.webp" alt="Ribs"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Gulab Jamun</h3><span class="rating">4.8 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹119</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+
+            <div class="card"
+                data-name="Gajar halwa"
+                data-price="129"
+                data-img="./assets/dessert/gajar-halwa.jpg">
+                <div class="img-box"><img src="./assets/dessert/gajar-halwa.jpg" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Gajar Halwa</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹129</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Kaju Barfi"
+                data-price="449"
+                data-img="./assets/dessert/kaju-katli.gif">
+                <div class="img-box"><img src="./assets/dessert/kaju-katli.gif" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Kaju Barfi</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹449</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="RasMalai"
+                data-price="389"
+                data-img="./assets/dessert/rasmalai.jpg">
+                <div class="img-box"><img src="./assets/dessert/rasmalai.jpg" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>RasMalai</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹389</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Kalakand"
+                data-price="299"
+                data-img="./assets/dessert/kalakand.jpg">
+                <div class="img-box"><img src="./assets/dessert/kalakand.jpg" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Kalakand</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹299</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Jalebi"
+                data-price="120"
+                data-img="./assets/dessert/jalebi.avif">
+                <div class="img-box"><img src="./assets/dessert/jalebi.avif" alt="Pasta"></div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Jalebi</h3><span class="rating">4.6 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹120</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>   
+        <h2>Cakes & Bakery</h2> 
+        <div class="product-grid"
+                data-name="Black Forest Cake"
+                data-price="179"
+                data-img="./assets/dessert/black-forest-cake.jpg">
+            <div class="card">
+                <div class="img-box">
+                    <img src="./assets/dessert/black-forest-cake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Black Forest Cake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹179</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Cheese Cake"
+                data-price="149"
+                data-img="./assets/dessert/cheesecake.webp">
+                <div class="img-box">
+                    <img src="./assets/dessert/cheesecake.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Cheese Cake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹149</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Brownies"
+                data-price="169"
+                data-img="./assets/dessert/brownies.webp">
+                <div class="img-box">
+                    <img src="./assets/dessert/brownies.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Brownies</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹169</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Chocolate Cake"
+                data-price="140"
+                data-img="./assets/dessert/choco cake.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/choco cake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Chocolate Cake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹140</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Cup Cake"
+                data-price="90"
+                data-img="./assets/dessert/cupcakes.webp">
+                <div class="img-box">
+                    <img src="./assets/dessert/cupcakes.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Cup Cake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹90</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Donut"
+                data-price="90"
+                data-img="./assets/dessert/donut.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/donut.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Donut</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹90</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Red Velvet Cake"
+                data-price="220"
+                data-img="./assets/dessert/redvelvet-cake.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/redvelvet-cake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Red Velvet Cake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹220</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Vanilla Cake"
+                data-price="99"
+                data-img="./assets/dessert/vanilla cake.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/vanilla cake.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Vanilla Cake</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹99</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+        <h2>Cold Desserts</h2>
+        <div class="product-grid">
+            <div class="card"
+                data-name="Ice Cream"
+                data-price="79"
+                data-img="./assets/dessert/ice-cream.webp">
+                <div class="img-box">
+                    <img src="./assets/dessert/ice-cream.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Ice Cream</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹79</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Kulfi"
+                data-price="79"
+                data-img="./assets/dessert/kulfi.jpg">
+                <div class="img-box">
+                    <img src="./assets/dessert/kulfi.jpg" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Kulfi</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹179</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Falooda"
+                data-price="130"
+                data-img="./assets/dessert/falooda.JPG">
+                <div class="img-box">
+                    <img src="./assets/dessert/falooda.JPG" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Falooda</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹130</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+            <div class="card"
+                data-name="Fruit Custard"
+                data-price="199"
+                data-img="./assets/dessert/fruit-custard.webp">
+                <div class="img-box">
+                    <img src="./assets/dessert/fruit-custard.webp" alt="Pbm">
+                </div>
+                <div class="card-info">
+                    <div class="title-row"><h3>Fruit Custard</h3><span class="rating">4.9 <i class="fas fa-star"></i></span></div>
+                    <div class="price-row"><span class="price">₹199</span><button class="add-to-cart">Add</button></div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="site-footer">
+    <div class="container footer-grid">
+        <div class="footer-column">
+            <div class="logo">Gourmet<span>Hub</span></div>
+            <p class="footer-about">
+                Bringing the finest flavors from local kitchens straight to your doorstep. Quality ingredients, lightning-fast delivery.
+            </p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+                <a href="https://x.com/?lang=en-in"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Our Team</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Partner with Us</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-column">
+            <h3>Contact Us</h3>
+            <ul class="contact-info">
+                <li><i class="fas fa-phone"></i> +91 XXX-XXX-XXXX</li>
+                <li><i class="fas fa-envelope"></i> support@gourmethub.com</li>
+                <li><i class="fas fa-map-marker-alt"></i> 123 AREA, GAUR City</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <div class="container bottom-content">
+            <p>&copy; 2026 Gourmet Hub. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+<script src="index.js"></script>
+ </body>
+ </html>
