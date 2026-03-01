@@ -26,7 +26,7 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.08);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1100;
 }
 
 .navbar-content {
@@ -106,6 +106,56 @@ body {
 .btn-secondary {
     background: #2c3e50;
     color: white;
+}
+
+.promo-bar {
+  background: linear-gradient(90deg, #111827, #1f2937);
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 10px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  overflow: hidden;
+}
+
+/* Soft Glow Animation */
+.promo-bar {
+  animation: pulseGlow 2.5s ease-in-out infinite alternate;
+}
+
+.promo-bar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.3),
+    transparent
+  );
+  animation: shine 2s infinite;
+}
+
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 150%; }
+}
+@keyframes pulseGlow {
+  from {
+    text-shadow: 0 0 5px #ff6600,
+                 0 0 10px #ff6600;
+  }
+  to {
+    text-shadow: 0 0 15px #ff6600,
+                 0 0 30px #ff6600;
+  }
 }
 
 /* --- Hero Section --- */
@@ -494,6 +544,7 @@ body {
   position: relative;
   display: inline-block;
   padding-bottom: 10px; /* important - hover area increase */
+  z-index: 5000;
 }
 
 .dropbtn {

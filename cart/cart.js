@@ -79,7 +79,7 @@ function renderCart() {
   });
 
   // Price Details
-  let discount = subtotal * 0.2;
+  let discount = subtotal * 0.10;
   let delivery = subtotal > 500 ? 0 : 49;
   let total = subtotal - discount + delivery;
 
